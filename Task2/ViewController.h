@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    IBOutlet UITextField *_firstName;
+    IBOutlet UITextField *_lastName;
+}
 
+- (IBAction)showHello:(id)sender;
 
 @end
 

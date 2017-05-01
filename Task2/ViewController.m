@@ -24,4 +24,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)showHello:(id)sender {
+    NSString *text = [NSString stringWithFormat:@"%@ %@",_firstName.text, _lastName.text];
+    UIAlertView *showHello = [[UIAlertView alloc] initWithTitle:@"Hello" message:text delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [showHello show];
+}
+
 @end
