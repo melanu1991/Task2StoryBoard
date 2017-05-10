@@ -9,12 +9,18 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-{
+/*{
     IBOutlet UITextField *_firstName;
     IBOutlet UITextField *_lastName;
-}
+    IBOutlet UILabel *_helloName;
+}*/
+@property (retain, nonatomic) IBOutlet UILabel *firstNameLabel;
+@property (retain, nonatomic) IBOutlet UILabel *LastNameLabel;
+@property (retain, nonatomic) IBOutlet UITextField *firstNameField;
+@property (retain, nonatomic) IBOutlet UITextField *lastNameField;
+@property (retain, nonatomic) IBOutlet UILabel *helloNameLabel;
 
-- (IBAction)showHello:(id)sender;
+- (IBAction)helloHere:(id)sender;
 
 @end
 
