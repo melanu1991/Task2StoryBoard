@@ -28,6 +28,13 @@
     NSString *text = [NSString stringWithFormat:@"%@ %@",_firstName.text, _lastName.text];
     UIAlertView *showHello = [[UIAlertView alloc] initWithTitle:@"Hello" message:text delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [showHello show];
+    [showHello release];
+}
+
+-(void)dealloc{
+    [_firstName release];
+    [_lastName release];
+    [super dealloc];
 }
 
 @end
